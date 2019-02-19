@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+</head>
+<body>
+<form action="" method="post">
+    <input type="text">
+    <input type="submit" value="提交">
+</form>
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $(":submit").click(function(){
+        var v=$(this).prev().val();
+        if(v.length>0){
+            return true;
+        }else{
+         alter("请输入内容！");
+         return false;
+        }
+    })
+</script>
+</body>
+</html>

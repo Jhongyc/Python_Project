@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建标签并添加</title>
+</head>
+<body>
+<input type="button" onclick="AddEle1();" value="添加">
+<div id="i1">
+    <input type="text">
+    <hr>
+</div>
+<script>
+    <!--function AddEle(){-->
+    <!--var tag="<input type='text'><hr>"-->
+    <!--document.getElementById("i1").insertAdjacentHTML("beforeEnd",tag);-->
+    <!--}-->
+    function AddEle1(){
+    var tag=document.createElement("input");
+    tag.setAttribute("type","text");
+    tag.style.fontSize='16px';
+    tag.style.color='red';
+    var tag1=document.createElement("hr")
+    document.getElementById("i1").appendChild(tag);
+    document.getElementById("i1").appendChild(tag1)
+    <!--document.getElementById("i1").insertAdjacentHTML("beforeEnd",tag);-->
+    }
+</script>
+</body>
+</html>

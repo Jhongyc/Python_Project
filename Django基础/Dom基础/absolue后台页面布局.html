@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        .body{
+        margin: 0;
+        }
+        .left{
+        float:left;
+        }
+        .right{
+        float:right;
+        }
+        .pg-header{
+        line-height:48px;
+        height:48px;
+        background-color:#2459a2;
+        color:white;
+        }
+        .pg-header .logo{
+        width:200px;
+        background-color:blue;
+        text-align:center;
+        color:white;
+        }
+        .pg-header .user{
+        height:48px;
+        width:160px;
+        background-color:wheat;
+        color:white;
+        }
+        .pg-header .user:hover{
+        background-color:#4787ed;
+        }
+        .pg-content .menu{
+        background-color:#dddddd;
+        position:absolute;
+        top:48px;
+        left:0;
+        bottom:0;
+        width:200px;
+        }
+        .pg-content .content{
+        position:absolute;
+        left:200px;
+        top:48px;
+        bottom:0;
+        right:0;
+        overflow:auto;
+        background-color:#ffa00a;
+        overflow:auto;
+        z-index:9;
+        }
+        .pg-header .user img{
+        width:50px;
+        height:44px;
+        margin-top:2px;
+        margin-left:2px;
+        border-radius:50%;
+        }
+        .pg-header .user .b a{
+        display:block;
+        }
+        .pg-header .user .b{
+        z-index:10;
+        position:absolute;
+        top:48px;
+        right:44px;
+        background-color:white;
+        width:160px;
+        display:none;
+        color:black;
+        }
+        .user:hover .b{
+        display:block;
+        }
+        .pg-header .icons{
+        padding:0 10px;
+        }
+         .pg-header .icons:hover{
+         background-color:#204982;
+         }
+    </style>
+</head>
+<body class="body">
+<div class="pg-header">
+    <div class="logo left">老男孩</div>
+    <div class="user right" style="position:relative">
+        <a href="http://www.baidu.com">
+            <img src="小黄人.jpg">
+        </a>
+        <div class="b">
+            <a href="#">我的资料</a>
+            <a href="#">注销</a>
+            <a></a>
+            <a></a>
+        </div>
+    </div>
+    <div class=" icons right" ><i class="fa fa-bell-o" aria-hidden="true"></i><span style="border-radius:50%;display:inline-block;padding:9px;line-height:1px;background-color:red;">5</span></div>
+    <div class="icons right"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
+</div>
+
+<div class="pg-content">
+    <div class="menu left"></div>
+    <div class="content right"></div>
+</div>
+<div class="pg-footer"></div>
+</body>
+</html>
